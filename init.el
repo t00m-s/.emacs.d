@@ -10,6 +10,7 @@
   (load custom-file))
 
 (require 'init-ivy)
+(require 'init-lsp)
 (require 'init-ui)
 
 (provide 'init)
