@@ -3,12 +3,10 @@
 ;;; Code:
 (require 'lsp-mode)
 (add-hook 'prog-mode-hook #'lsp)
-(setq lsp-warn-no-matched-clients 't)
+(setq lsp-warn-no-matched-clients t)
+(setq company-idle-delay 0.1)
+(setq company-minimum-prefix-length 1)
+(setq lsp-auto-configure 't)
 
-(require 'lsp-ui)
-(lsp-ui-mode 't)
-
-(require 'lsp-ivy)
-(lsp-ivy-workspace-symbol 't)
 (provide 'init-lsp)
 ;;;init-lsp.el ends here
