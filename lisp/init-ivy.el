@@ -1,9 +1,15 @@
 ;;; init-ivy.el --- Ivy and Swiper config -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
-(require 'ivy)
-(require 'swiper)
+(leaf 'ivy
+  :ensure)
+(leaf 'swiper
+  :ensure)
+(leaf 'ivy-posframe
+  :ensure)
 (ivy-mode)
+(setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display)))
+(ivy-posframe-mode 1)
 (setq ivy-use-virtual-buffers 't)
 (setq enable-recursive-minibuffers 't)
 (global-set-key "\C-s" 'swiper)

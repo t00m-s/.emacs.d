@@ -14,7 +14,7 @@
  '(custom-safe-themes
    '("60ada0ff6b91687f1a04cc17ad04119e59a7542644c7c59fc135909499400ab8" default))
  '(package-selected-packages
-   '(magit lsp-ivy zzz-to-char lsp-treemacs company flycheck lsp-ui lsp-mode all-the-icons-dired all-the-icons-ivy use-package swiper doom-themes doom-modeline-now-playing all-the-icons))
+   '(leaf undo-tree use-package-hydra elpy ivy-posframe ligature ein magit lsp-ivy zzz-to-char lsp-treemacs company flycheck lsp-ui lsp-mode all-the-icons-dired all-the-icons-ivy use-package swiper doom-themes doom-modeline-now-playing all-the-icons))
  '(warning-suppress-log-types '((lsp-mode) (lsp-mode) (lsp-mode)))
  '(warning-suppress-types '((lsp-mode) (lsp-mode))))
 (custom-set-faces
