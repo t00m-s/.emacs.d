@@ -2,9 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 (require 'package)
-(add-to-list 'package-archives '(("org" . "https://orgmode.org/elpa/")
-		       ("melpa" . "https://melpa.org/packages/")
-		       ("gnu" . "https://elpa.gnu.org/packages/")))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;;; (add-to-list 'package-archives '("elpy" . "https://jorgenschaefer.github.io/packages/") t)
+(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/") t)
+
 (package-initialize)
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
