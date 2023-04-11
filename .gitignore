@@ -9,6 +9,9 @@ tramp
 .\#*
 /.cache/
 /elpy/
+/transient/*
+/request/*
+recentf
 # Org-mode
 .org-id-locations
 *_archive
