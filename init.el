@@ -3,10 +3,13 @@
 ;;; Code:
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-(add-to-list 'package-archives '("elpy" . "https://jorgenschaefer.github.io/packages/") t)
-(add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/") t)
-
+;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
+;; and `package-pinned-packages`. Most users will not need or want to do this.
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
+
+(eval-when-compile
+  (require 'use-package))
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (setq custom-file (concat user-emacs-directory "custom.el"))
@@ -26,6 +29,7 @@
 (require 'init-lsp)
 (require 'init-ui)
 (require 'init-which-key)
+(require 'init-magit)
 ;;; Posso scrivere y al posto di yes
 (defalias 'yes-or-no-p 'y-or-n-p)
 ;;; Evita di spararmi subito un buffer di warning

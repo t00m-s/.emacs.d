@@ -1,9 +1,9 @@
 ;;; init-python.el --- Python config -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
-(leaf elpy
+(use-package elpy
   :ensure t
-  :defer-config t
+  :defer t
   :init
   (advice-add 'python-mode :before 'elpy-enable))
 

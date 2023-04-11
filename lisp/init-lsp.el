@@ -1,7 +1,7 @@
 ;;; init-lsp.el --- LSP-Mode configuration -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
-(leaf 'lsp-mode
+(use-package lsp-mode
   :ensure t)
 (add-hook 'prog-mode-hook #'lsp)
 (setq lsp-warn-no-matched-clients 'nil)

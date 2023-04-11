@@ -1,7 +1,8 @@
 ;;; init-which-key.el --- Which-key configuration -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
-(leaf 'which-key)
+(use-package which-key
+  :ensure t)
 (which-key-mode)
 
 (provide 'init-which-key)

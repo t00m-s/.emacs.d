@@ -1,7 +1,8 @@
-;;; init-ligatures.el --- Ligatures for programming mode -*- lexical-binding: t -*-
+;;; init-ligatures.el --- Enable ligatures for Fira Code font -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
-(leaf 'ligature
+(use-package ligature
+  :ensure t
   :config
   ;; Enable the "www" ligature in every possible major mode
   (ligature-set-ligatures 't '("www"))
