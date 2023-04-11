@@ -1,11 +1,13 @@
 ;;; init-ui.el --- Emacs UI changes -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
-(require 'doom-modeline)
-(require 'all-the-icons)
+(leaf 'doom-modeline
+  :ensure t)
+(leaf 'all-the-icons
+  :ensure t)
 (require 'init-ligatures)
 (leaf 'undo-tree
-  :ensure)
+  :ensure t)
 (doom-modeline-mode 't)
 (display-battery-mode 't)
 (global-undo-tree-mode 't)

@@ -2,11 +2,11 @@
 ;;; Commentary:
 ;;; Code:
 (leaf 'ivy
-  :ensure)
+  :ensure t)
 (leaf 'swiper
-  :ensure)
+  :ensure t)
 (leaf 'ivy-posframe
-  :ensure)
+  :ensure t)
 (ivy-mode)
 (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display)))
 (ivy-posframe-mode 1)

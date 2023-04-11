@@ -3,7 +3,7 @@
 ;;; Code:
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;;; (add-to-list 'package-archives '("elpy" . "https://jorgenschaefer.github.io/packages/") t)
+(add-to-list 'package-archives '("elpy" . "https://jorgenschaefer.github.io/packages/") t)
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/") t)
 
 (package-initialize)
@@ -20,11 +20,14 @@
   (add-hook 'emacs-startup-hook
             (lambda() (setq gc-cons-threshold normal-gc-cons-threshold))))
 
-(defalias 'yes-or-no-p 'y-or-n-p)
-(setq native-comp-async-report-warnings-errors 'nil) ;;; Evita di spararmi subito un buffer di warning
+;;; Packages that require additional config
+;;; (require 'init-autoupdate)
 (require 'init-ivy)
 (require 'init-lsp)
 (require 'init-ui)
-
-(provide 'init)
+(require 'init-which-key)
+;;; Posso scrivere y al posto di yes
+(defalias 'yes-or-no-p 'y-or-n-p)
+;;; Evita di spararmi subito un buffer di warning
+(setq native-comp-async-report-warnings-errors 'nil)
 ;;; init.el ends here
