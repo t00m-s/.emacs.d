@@ -24,7 +24,8 @@
             (lambda() (setq gc-cons-threshold normal-gc-cons-threshold))))
 
 ;;; Packages that require additional config
-;;; (require 'init-autoupdate)
+(require 'init-autoupdate)
+(require 'init-backup)
 (require 'init-ivy)
 (require 'init-lsp)
 (require 'init-ui)
@@ -34,4 +35,5 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 ;;; Evita di spararmi subito un buffer di warning
 (setq native-comp-async-report-warnings-errors 'nil)
+
 ;;; init.el ends here

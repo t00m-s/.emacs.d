@@ -12,6 +12,8 @@ tramp
 /transient/*
 /request/*
 recentf
+/backup/*
+
 # Org-mode
 .org-id-locations
 *_archive
