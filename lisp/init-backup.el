@@ -1,4 +1,4 @@
-;;; init-autoupdate.el --- Emacs auto-update packages -*- lexical-binding: t -*-
+;;; init-backup.el --- Emacs backup management -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 (defvar --backup-directory (concat user-emacs-directory "backups"))
