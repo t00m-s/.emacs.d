@@ -21,7 +21,7 @@
 (save-place-mode 1)
 (set-frame-font "Fira Code 14" nil t)
 (setq inhibit-startup-screen t)
-(display-line-numbers-mode)
+(display-line-numbers-mode 't)
 (setq display-line-numbers 'relative)
 
 (load-theme 'doom-tokyo-night)
