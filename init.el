@@ -35,15 +35,10 @@
 
 (add-hook 'emacs-startup-hook #'efs/display-startup-time)
 
-<<<<<<< HEAD
-(when (fboundp 'windmove-default-keybindings)
-  (windmove-default-keybindings 'meta))
-
-=======
 ;;; Move between buffers with Alt + arrows
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings 'meta))
->>>>>>> 24235ee (add: windmove-keybindings to move between buffers without C-x o)
+
 ;;; Packages that require additional config
 (require 'init-autoupdate)
 (require 'init-backup)
