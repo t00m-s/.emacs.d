@@ -1,10 +1,15 @@
-;;; init-lsp.el --- LSP-Mode configuration -*- lexical-binding: t -*-
+;;; init-lsp.el --- LSP-Mode configuration / Programming config -*- lexical-binding: t -*-
 ;;; Commentary:
 ;;; Code:
 (use-package lsp-mode
   :ensure t)
 (use-package yasnippet
   :ensure t)
+(use-package evil-nerd-commenter
+  :ensure t)
+
+;;; M - righe da commentare
+(evilnc-default-hotkeys t)
 ;; When Emacs 29 is stable remove this.
 (use-package tree-sitter-langs
   :ensure t)
@@ -18,11 +23,14 @@
 
 (yas-reload-all)
 (add-hook 'prog-mode-hook #'yas-minor-mode)
+
 (add-hook 'prog-mode-hook #'lsp)
+
 (setq lsp-warn-no-matched-clients 'nil)
 (setq company-idle-delay 0.1)
 (setq company-minimum-prefix-length 1)
 (setq lsp-auto-configure 't)
+(require 'init-dap)
 (require 'init-python)
 (require 'init-typescript)
 (require 'init-whitespace)
