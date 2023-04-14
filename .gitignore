@@ -13,6 +13,7 @@ tramp
 /request/*
 recentf
 /backup/*
+custom.el
 
 # Org-mode
 .org-id-locations
