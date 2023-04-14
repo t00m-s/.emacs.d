@@ -10,6 +10,11 @@
   :ensure t
   :if (display-graphic-p))
 
+(use-package all-the-icons-dired
+  :ensure t
+  :config
+  (all-the-icons-dired-mode))
+
 (use-package undo-tree
   :ensure t)
 
