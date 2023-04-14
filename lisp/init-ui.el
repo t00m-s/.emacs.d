@@ -27,6 +27,14 @@
 (setq dashboard-startup-banner 'logo)
 (setq dashboard-center-content t)
 
+(use-package dirvish
+  :ensure t
+  :config
+  (dirvish-override-dired-mode))
+
+(setq dirvish-attributues
+      '(vc-state all-the-icons git-msg file-size file-time))
+
 (doom-modeline-mode t)
 (display-battery-mode t)
 
