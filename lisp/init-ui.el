@@ -35,6 +35,11 @@
 (setq dirvish-attributues
       '(vc-state all-the-icons git-msg file-size file-time))
 
+(use-package neotree
+  :ensure t
+  :config
+  (global-set-key [f8] 'neotree-toggle))
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 (doom-modeline-mode t)
 (display-battery-mode t)
 
