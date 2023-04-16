@@ -58,8 +58,9 @@
 
 (set-frame-font "Fira Code 14" nil t)
 (setq inhibit-startup-screen t)
-(display-line-numbers-mode t)
-(setq display-line-numbers 'relative)
+
+(setq display-line-numbers-type 'relative)
+(add-hook 'prog-mode-hook #'display-line-numbers-mode)
 
 (load-theme 'doom-tokyo-night)
 
