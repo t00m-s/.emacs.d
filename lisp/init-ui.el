@@ -6,15 +6,6 @@
 (use-package doom-modeline
   :ensure t)
 
-(use-package all-the-icons
-  :ensure t
-  :if (display-graphic-p))
-
-(use-package all-the-icons-dired
-  :ensure t
-  :config
-  (all-the-icons-dired-mode))
-
 (use-package undo-tree
   :ensure t)
 
@@ -36,6 +27,15 @@
   :ensure t
   :config
   (dirvish-override-dired-mode))
+
+(use-package all-the-icons
+  :ensure t
+  :if (display-graphic-p))
+
+(use-package all-the-icons-dired
+  :ensure t
+  :config
+  (all-the-icons-dired-mode))
 
 (setq dirvish-attributues
       '(vc-state all-the-icons git-msg file-size file-time))
