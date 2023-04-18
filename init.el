@@ -32,7 +32,7 @@
 (require 'init-ui)
 (require 'init-which-key)
 (require 'init-magit)
-
+(require 'init-org)
 ;;; Posso scrivere y al posto di yes
 (defalias 'yes-or-no-p 'y-or-n-p)
 
