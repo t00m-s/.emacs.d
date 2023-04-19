@@ -33,6 +33,7 @@
 (require 'init-dap)
 (require 'init-python)
 (require 'init-typescript)
+(require 'init-java)
 (require 'init-whitespace)
 (provide 'init-lsp)
 ;;;init-lsp.el ends here

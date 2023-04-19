@@ -2,10 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 (defvar --backup-directory (concat user-emacs-directory "backups"))
-(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 (if (not (file-exists-p --backup-directory))
     (make-directory --backup-directory t))
 (setq backup-directory-alist `(("." . ,--backup-directory)))
+(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
 (setq make-backup-files t)         ; backup of a file the first time it is saved.
 (setq      backup-by-copying t)               ; don't clobber symlinks
 (setq version-control t)                 ; version numbers for backup files
