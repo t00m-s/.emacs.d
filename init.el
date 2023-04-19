@@ -25,6 +25,7 @@
   (windmove-default-keybindings 'meta))
 
 ;;; Packages that require additional config
+(require 'init-functions)
 (require 'init-autoupdate)
 (require 'init-backup)
 (require 'init-ivy)

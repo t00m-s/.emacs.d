@@ -9,6 +9,7 @@
 (setq org-src-preserve-indentation nil)
 (setq org-edit-src-content-indentation 0)
 (setq org-latex-listings t)
+
 (org-babel-do-load-languages
  'org-babel-load-languages '((C . t)
 			     (R . t)
