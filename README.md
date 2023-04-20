@@ -1,3 +1,5 @@
+# IMPORTANT
+Config files now are on a different repository.
 # .emacs.d
 My emacs configuration files.
 
